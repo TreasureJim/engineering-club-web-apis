@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Change me! <span id="change">0</span></h1>
+    <h2>not me...</h2>
+  </body>
+</html>
+
+<script type="text/javascript">
+  let elem = document.getElementById("change");
+  let num = 0;
+  setInterval(() => {
+    num++;
+    elem.textContent = num;
+  }, 1000);
+</script>
